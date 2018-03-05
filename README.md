@@ -1,6 +1,6 @@
 # Analisis Sentimen Twitter dengan TFIDF-ANN
 
-Sentimen analisis twit dari Twitter menggunakan Multilayer Perceptron dengan ekstraksi fitur TF-IDF (Term Frequency and Inverse Document Frequency) 
+Sentimen analisis twit dari Twitter untuk menentukan apakah sebuah twitter dianggap berbau POSITIF atau NEGATIF. Sentimen analisis ini menggunakan Multilayer Perceptron dengan ekstraksi fitur TF-IDF (Term Frequency and Inverse Document Frequency) 
 
 ## Installation
 
