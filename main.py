@@ -105,11 +105,16 @@ def testFromTrained(x):
 	return getBinaryResult(model.predict_proba(np.array(x)))
 
 
-# preproses()
-# td = TFIDF([xdata, ydata])
+preproses()
+td = TFIDF([xdata, ydata])
+
+# TRAINING
+# train(td.getOnlyX(), ydata)
+
+# RETRAINING
 # retrain_model(td.getOnlyX(), ydata)
 
-
+# TESTING
 test = "rt @yusuflogen: ahok terkenal sbg gub tdk santun, tp kok kesan saya si ahok paling santun ya hari ini dbanding agus dan anis #debat2pilkada\u2026"
 print test
 print testFromTrained([td.transform(test)])
