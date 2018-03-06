@@ -115,7 +115,11 @@ td = TFIDF([xdata, ydata])
 # retrain_model(td.getOnlyX(), ydata)
 
 # TESTING
-test = "rt @yusuflogen: ahok terkenal sbg gub tdk santun, tp kok kesan saya si ahok paling santun ya hari ini dbanding agus dan anis #debat2pilkada\u2026"
+test = "ahok itu pemimpin yang beres memimpin"
+print test
+print testFromTrained([td.transform(test)])
+
+test = "ahok itu pemimpin yang ga beres memimpin"
 print test
 print testFromTrained([td.transform(test)])
 

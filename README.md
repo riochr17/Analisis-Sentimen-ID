@@ -12,13 +12,21 @@ Pastikan scikit-learn, nltk, numpy, keras (dan backendnya), dan csv telah terpas
 
 ## Testing
 
+Pada data diatas, dataset yang digunakan adalah twit mengenai pilkada DKI Jakarta kemarin.
+
 ```python
 # main.py
-test = "rt @yusuflogen: ahok terkenal sbg gub tdk santun, tp kok kesan saya si ahok paling santun ya hari ini dbanding agus dan anis #debat2pilkada\u2026"
+
+# TESTING
+test = "ahok itu pemimpin yang beres memimpin"
 print test
 print testFromTrained([td.transform(test)])
-
 # output: POSITIF
+
+test = "ahok itu pemimpin yang ga beres memimpin"
+print test
+print testFromTrained([td.transform(test)])
+# output: NEGATIF
 ```
 
 ## Contributing
