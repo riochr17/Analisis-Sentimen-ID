@@ -63,22 +63,22 @@ print analiser_instance.testFromTrained([analiser_instance.tfidf_data.transform(
 # analiser.py
 # Change parameter for training
 def train(self, output_filename = 'model'):
-	...
-	learning_rate 	= .01
-	loss_error		= 'binary_crossentropy'
-	batch_size		= 1
-	epoch 			= 10
-	...
+    ...
+    learning_rate   = .01
+    loss_error      = 'binary_crossentropy'
+    batch_size      = 1
+    epoch           = 10
+    ...
 
 # analiser.py
 # Change parameter for retraining
 def retrain(self, output_filename):
-	...
-	learning_rate 	= .005
-	loss_error		= 'binary_crossentropy'
-	batch_size		= 1
-	epoch 			= 3
-	...
+    ...
+    learning_rate   = .005
+    loss_error      = 'binary_crossentropy'
+    batch_size      = 1
+    epoch           = 3
+    ...
 ```
 
 ## Contributing
