@@ -17,21 +17,21 @@ scikit-learn, nltk, numpy, keras (dan backendnya), csv
 # for main class example see main_*.py file, try run the file
 #
 
---
+# --
 # main_pre_trained.py | load existing model
 # analiser load training_data as base train data, load existing model
 
 an = Analiser(training_data='data/training_all_random.csv')
 an.load_model(filename='model')
 
---
+# --
 # main_training.py | train new model
 # analiser load training_data as base train data, train the data, save the model
 
 an = Analiser(training_data='data/training_all_random.csv')
 an.train(filename='model')
 
---
+# --
 # main_re_training.py | retrain existing model
 # analiser load training_data as base train data, load existing model, train the data, save the model
 
