@@ -15,7 +15,10 @@ class Preproses:
 		DATA_KBBI	= [kamus.strip('\n').strip('\r') for kamus in open('kamus/kbba.txt')]
 
 	def tokenize(self, tweet): 
-		token = nltk.word_tokenize(tweet)
+		# this is very poor implementation of word tokenizer
+		# try to rich tokenizer below using your best tools
+		# token = nltk.word_tokenize(tweet)
+		token = tweet.split(' ')
 		return token
 
 	def kbbi(self, token): 
